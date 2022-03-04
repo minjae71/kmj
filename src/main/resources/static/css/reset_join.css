@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* font */
+@font-face { /* 에스코어드림Thin */
+	font-family: 'S-CoreDream-1Thin';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림EL */
+	font-family: 'S-CoreDream-2ExtraLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림Lt */
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림Reg */
+	font-family: 'S-CoreDream-4Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림Md */
+	font-family: 'S-CoreDream-5Medium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림B */
+	font-family: 'S-CoreDream-6Bold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림EB */
+	font-family: 'S-CoreDream-7ExtraBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림Hvy */
+	font-family: 'S-CoreDream-8Heavy';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face { /* 에스코어드림Bl */
+	font-family: 'S-CoreDream-9Black';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* CSS 초기화 */
+*{
+	font-family: 'S-CoreDream-3Light';
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong,
+sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-style: unset;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-font-smoothing: antialised;
+}
+body, h1, h2, h3, h4, h5, h6, table, pre, xmp, plaintext, listing, input, textarea, select, button, a {
+    font-size: 12px;
+    color: #646464;
+    line-height: 1.25;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ul {
+    display: block;
+}
+/* 공통레이아웃 */
+#header, #layerWrap, #contentWrap, #ftLink .link {
+    max-width:1200px;
+    background-color:#fff;
+    padding:0; margin:0 auto;
+}
+a {
+    margin: 0; padding: 0;
+    font-size: 100%; text-decoration: none; vertical-align: baseline;
+    color: #fff; background: transparent;
+}
+
+button {overflow: hidden; cursor: pointer;}
+button span {visibility: hidden;}
+
+nav ul, li {list-style: none;}
+
+.ir *, .blind { z-index:-1; position: absolute; display: block; left: 0; top: 0; overflow: hidden; visibility: hidden; width: 0; height: 0; text-indent: -9999px; }
+
+
+.loc-navi, .loc-navi a { color: #878787; text-transform: capitalize; vertical-align:top; line-height:46px }
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+input {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    vertical-align: top;
+    border: 1px solid #bab1c2;
+    color: #bab1c2;
+    border-radius: 0;
+}
+
+.fleft {float:left;}
+.fright {float:right !important;}
+
+img, fieldset,button {border:0 none; vertical-align:top;}
+img {vertical-align:middle;}
+
+hr, caption, legend {display: none;}
+
+/*
+input::-moz-placeholder {color: #bab1c2;}
+input::-webkit-input-placeholder {color: #bab1c2;}
+*/
+
+.relative {position:relative;}
+.cboth {clear:both; *zoom:1}
+.cboth:after {content:" "; display:block; clear:both;}
+
+.line{border: 1px solid #ddd; border-radius: 5px;}
+
+.mgt16{margin-top: 16px;}
+.mgb10{margin-bottom: 10px;}
+
+.pdt70 {padding-top: 70px;}
+.pdt100 {padding-top: 100px;}

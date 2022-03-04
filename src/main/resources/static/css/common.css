@@ -1,0 +1,224 @@
+/* SNS 영역 */
+.sns_section {
+    order: 1;
+    width: 100%;
+    background-color: #1e88e2;
+    border-bottom: 1px solid #1e88e2;
+}
+.sns_list {
+    display: flex;
+}
+.sns_list li {
+    width: 25%;
+    text-align: center;
+}
+.sns_list li a {
+    display: block;
+    padding: 15px 0;
+    padding: 0.938rem 0;
+}
+
+/* 헤더 영역 */
+.header {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    position: relative;
+    background-color: #e5ecf1;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo_image {
+    order: 1;
+}
+.logo_text {
+    order: 2;
+    width: 100%;
+    font-size: 1.500em;
+    font-size: 1.500rem;
+    line-height: 21px;
+    line-height: 1.313rem;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px #000;
+}
+.logo_text a {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    color: #1e88e2;
+}
+.nav {
+    order: 3;
+    width: 100%;
+}
+.gnb {
+    display: none;
+}
+.gnb li {
+    display: flex;
+    background: #e5ecf1;
+}
+.gnb li a {
+    width: 100%;
+    padding: 20px 0;
+    padding: 1.250rem 0;
+    margin-right: 20px;
+    margin-right: 1.250rem;
+    font-size: 0.938em;
+    font-size: 0.938rem;
+    text-indent: 20px;
+    text-indent: 1.250rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: right;
+    color: #000;
+}
+.gnb li .now_page {
+    font-weight: bold;
+    color: #1e88e2;
+}
+.menu_toggle_btn {
+    display: block;
+    width: 50px;
+    width: 3.125rem;
+    height: 50px;
+    height: 3.125rem;
+    position: absolute;
+    top: 10px;
+    top: 0.625rem;
+    right: 10px;
+    right: 0.625rem;
+    text-indent: -9999px;
+    background: url(../images/s_images/menu_toggle_btn.png) no-repeat;
+    cursor: pointer;
+}
+/* 푸터 영역 */
+.footer {
+    order: 9;
+    width: 100%;
+    background: #2f5986;
+}
+.footer p {
+    padding: 20px;
+    font-size: 0.813em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 1px 1px #191919;
+}
+
+/* 태블릿 영역 CSS */
+@media all and (min-width:768px) {
+    /* SNS 영역 */
+    .sns_section {
+        order: 2;
+        width: 100%;
+        background-color: #e5ecf1;
+    }
+
+    /* 헤더 영역 */
+    .header {
+        order:1;
+        flex-direction: row;
+    }
+    .nav {
+        position: relative;
+        min-height: 70px;
+        min-height: 4.375rem;
+    }
+    .gnb {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 20;
+        width: 40.10416666666667%;
+    }
+
+    .menu_toggle_btn {
+        top: 50%;
+        right: 30px;
+        right: 1.875rem;
+        z-index: 20;
+        margin-top: -15px;
+        margin-top: -0.938rem;
+    }
+
+    /* 푸터 영역 */
+    .footer p {
+        padding: 40px;
+        padding: 2.500rem;
+    }
+}
+
+/* PC 영역 CSS */
+@media all and (min-width:1132px) {
+
+    /* SNS 영역 */
+    .sns_section {
+        order: 8;
+        width: 100%;
+        background-color: #e5ecf1;
+    }
+    .sns_list {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .sns_list li {
+        width: 5%;
+        text-align: center;
+    }
+    .sns_list li a {
+        display: block;
+        padding: 15px 0;
+        padding: 0.938rem 0;
+    }
+
+    /* 헤더 영역 */
+    .header {
+        order: 1;
+        justify-content: flex-end;
+        align-items: center;
+        position: static;
+        border-bottom: 1px solid #1e88e2;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        position: static;
+        width: 87.5%;
+        flex-direction: column;
+    }
+    .gnb {
+        display: flex !important;
+        position: static;
+        width: 100%;
+        text-shadow: 0px 1px 1px #000;
+        justify-content: flex-end;
+    }
+    .gnb li {
+        display: block;
+        background: none;
+    }
+    .gnb li a{
+        width: auto;
+        padding: 0;
+        text-indent: 0;
+    }
+    .gnb li span {
+        display: none;
+    }
+    .menu_toggle_btn {
+        display: none;
+    }
+    .footer {
+        order: 9;
+    }
+    .footer p {
+        padding-left: 3.125rem;
+        text-align: left;
+    }
+}

@@ -1,0 +1,597 @@
+@charset "UTF-8";
+
+*{ box-sizing: border-box; }
+#C_Wrap { margin-top: 120px; }
+
+.message {
+    display: flex;
+    color: red;
+	position: relative;
+	padding-left: 5px;
+	margin-bottom: 20px;
+}
+#wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #fff;
+}
+#contentWrapper {
+    order: 4;
+}
+/* section */
+.contentSection {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contentSection .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+.contentSection .contentBx .formBx{
+	width: 50%;
+}
+
+/* sub header */
+.contentSection .contentBx .formBx h2{
+	color: #333;
+	text-align: center;
+	font-size: 1.5em;
+	font-size: 20px;
+	font-family: 'S-CoreDream-5Medium';
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+
+/* login field */
+.contentSection .contentBx .formBx .join_field{
+	height: 45px;
+}
+
+
+/* inputBx */
+	.contentSection .contentBx .formBx .inputBx{
+		display: flex;
+		/*margin-bottom: 20px;*/
+		flex-direction: column;
+	}
+	.contentSection .contentBx .formBx .inputBx:first-child,
+	.contentSection .contentBx .formBx .inputBx:nth-child(3),
+	.contentSection .contentBx .formBx .inputBx:nth-child(5){
+		/*margin-bottom: 5px;*/
+	}
+	/*.contentSection .contentBx .formBx .addBX{
+		margin-bottom: 10px;
+	}*/
+	.contentSection .contentBx .formBx .inputBx input{
+		/* width: 100%; */
+		height: 100%;
+		padding: 10px 10px;
+		outline: none;
+		font-weight: 400;
+		border: 1px solid #ddd;
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #646464;
+		background: transparent;
+		border-radius: 5px;
+	}
+
+	/* 생일, 이메일, 휴대전화 */
+	.contentSection .contentBx .formBx .DPset{
+		display: flex;
+		flex-direction: row;
+		/*margin-bottom: 20px;*/
+	}
+	.contentSection .contentBx .formBx .DPset .unB{
+		font-size: 14px;
+		padding: 10px 5px;
+	}
+	.contentSection .contentBx .formBx .DPset .new-birth {
+		width: 100%;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		font-size: 14px;
+		padding: 10px 10px;
+	}
+	.contentSection .contentBx .formBx .DPset .ph2 {
+		width: 100%;
+		border: 1px solid #ddd;
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #646464;
+		background: transparent;
+		border-radius: 5px;
+	}
+	.contentSection .contentBx .formBx .DPset .unB{
+		font-size: 14px;
+		padding: 14px 5px;
+	}
+	.contentSection .contentBx .formBx .DPset .hg23,
+	.contentSection .contentBx .formBx .inputBx .arBX input,
+	.contentSection .contentBx .formBx .inputBx input{
+		height: 23px;
+	}
+	.contentSection .contentBx .formBx .DPset .ph1 {
+		width: 100%;
+		height: 45px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		font-size: 14px;
+		/*font-weight: bold;*/
+		padding: 10px 10px;
+	}
+	.contentSection .contentBx .formBx .DPset .ph2 {
+		width: 100%;
+		border: 1px solid #ddd;
+		font-size: 14px;
+		/*font-weight: bold;*/
+		letter-spacing: 1px;
+		color: #646464;
+		background: transparent;
+		border-radius: 5px;
+	}
+	/* 주소 */
+	.contentSection .contentBx .formBx .inputBx .arBX{
+		display: flex;
+	}
+
+/* button */
+.contentSection .contentBx .formBx .btnBX{
+	display: flex;
+	margin: 20px 0;
+	flex-direction: column;
+}
+.contentSection .contentBx .formBx .inputBx input[type="button"]{
+	height: 25px;
+	background: #2f5986;
+	color: #fff;
+	font-family: 'S-CoreDream-4Regular';
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.contentSection .contentBx .formBx .inputBx input[type="button"]:hover{
+	background: #708E48;
+}
+.contentSection .contentBx .formBx .inputBx input[type="reset"]{
+	height: 25px;
+	background: #ffffff;
+	color: #2f5986;
+	font-family: 'S-CoreDream-4Regular';
+	outline: none;
+	border: 1px solid #ddd;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.contentSection .contentBx .formBx .inputBx input[type="reset"]:hover{
+	background: #9ab377;
+	color: #ffffff;
+}
+
+/* 약관동의 폼 */
+.contentSection .contentBx .formBx .agreeform{
+	margin-left: 5px;
+}
+#chkwrap{
+	display: flex;
+	flex-direction: column;
+}
+#chkwrap .all-chk {
+	display: flex;
+	margin: 10px 0;
+	/* height: 43px; */
+	/* line-height: 45px; */
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	align-items: center;
+}
+#chkwrap .cont ul{
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #646464;
+	margin-bottom: 10px;
+}
+#chkwrap .cont ul .agreeflex{
+	display: flex;
+	align-items: baseline;
+	height: 22px;
+}
+#chkwrap .cont ul li .popupBX {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	line-height: 16px;
+	margin-left: 5px;
+	font-weight: normal;
+	font-size: 11px;
+	border: 1px solid #bdbec7;
+	background: #fafafa;
+	text-align: center;
+}
+#chkwrap .pbl10{
+	padding-left: 10px;
+}
+#chkwrap .cont .marketing{
+	margin-bottom: 10px;
+}
+#chkwrap .cont .marketing .mk-wrap div br{
+	display: none;
+}
+
+/* social */
+.contentSection .contentBx .formBx h3{
+	font-size: 15px;
+	color: #2f5986
+	text-align: center;
+	margin: 80px 0 30px;
+	font-weight: 500;
+}
+.contentSection .contentBx .formBx .sci{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.contentSection .contentBx .formBx .sci li{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #BEC1BA;
+	border-radius: 50%;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.contentSection .contentBx .formBx .sci .GG:hover{
+	background: #ea4335;
+}
+.contentSection .contentBx .formBx .sci .KT:hover{
+	background: #ffe812;
+}
+.contentSection .contentBx .formBx .sci .N:hover{
+	background: #2db400;
+}
+.contentSection .contentBx .formBx .sci li img{
+	width: 50px;
+	height: 50px;
+	transform: scale(0.5);
+	filter: invert(1);
+}
+
+/* 모바일 CSS */
+@media (max-width: 768px){
+
+	/* section */
+	.contentSection .contentBx{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	/* form */
+	.contentSection .contentBx .formBx{
+		width: 100%;
+		padding: 0 40px;
+		margin: 0 50px;
+	}
+
+	/* social */
+	.contentSection .contentBx .formBx h3 {
+		color: #2f5986
+		text-align: center;
+		margin: 30px 0 10px;
+		font-weight: 500;
+	}
+
+	/* 약관동의 폼 */
+	#chkwrap .cont .marketing .mk-wrap .mk-all{
+		margin-bottom: 10px;
+	}
+	#chkwrap .cont .marketing .mk-wrap div br{
+		display:block !important;
+	}
+}
+/* 태블릿용 CSS */
+@media (min-width:768px) {
+
+	/* section */
+	.contentSection .contentBx{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 75%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	/* social */
+	.contentSection .contentBx .formBx h3 {
+		color: #2f5986
+		text-align: center;
+		margin: 30px 0 20px;
+		font-weight: 500;
+	}
+
+	/* margin-top setting */
+	.mgt10{
+		margin-top: 10px;
+	}
+}
+
+@media (min-width:1132px) {
+
+/* section */
+.contentSection {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contentSection .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+.contentSection .contentBx .formBx{
+	width: 50%;
+}
+
+/* sub header */
+.contentSection .contentBx .formBx h2{
+	color: #333;
+	text-align: center;
+	font-size: 1.5em;
+	font-size: 20px;
+	font-family: 'S-CoreDream-5Medium';
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+
+/* login field */
+.contentSection .contentBx .formBx .join_field{
+	height: 45px;
+}
+
+
+/* inputBx */
+	.contentSection .contentBx .formBx .inputBx{
+		display: flex;
+		/*margin-bottom: 20px;*/
+		flex-direction: column;
+	}
+	.contentSection .contentBx .formBx .inputBx:first-child,
+	.contentSection .contentBx .formBx .inputBx:nth-child(3),
+	.contentSection .contentBx .formBx .inputBx:nth-child(5){
+		/*margin-bottom: 5px;*/
+	}
+	/*.contentSection .contentBx .formBx .addBX{
+		margin-bottom: 10px;
+	}*/
+	.contentSection .contentBx .formBx .inputBx input{
+		/* width: 100%; */
+		height: 100%;
+		padding: 10px 10px;
+		outline: none;
+		font-weight: 400;
+		border: 1px solid #ddd;
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #646464;
+		background: transparent;
+		border-radius: 5px;
+	}
+
+	/* 생일, 이메일, 휴대전화 */
+	.contentSection .contentBx .formBx .DPset{
+		display: flex;
+		flex-direction: row;
+		/*margin-bottom: 20px;*/
+	}
+	.contentSection .contentBx .formBx .DPset .unB{
+		font-size: 14px;
+		padding: 10px 5px;
+	}
+	.contentSection .contentBx .formBx .DPset .new-birth {
+		width: 100%;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		font-size: 14px;
+		padding: 10px 10px;
+	}
+	.contentSection .contentBx .formBx .DPset .ph2 {
+		width: 100%;
+		border: 1px solid #ddd;
+		font-size: 14px;
+		letter-spacing: 1px;
+		color: #646464;
+		background: transparent;
+		border-radius: 5px;
+	}
+	.contentSection .contentBx .formBx .DPset .unB{
+		font-size: 14px;
+		padding: 14px 5px;
+	}
+	.contentSection .contentBx .formBx .DPset .hg23,
+	.contentSection .contentBx .formBx .inputBx .arBX input,
+	.contentSection .contentBx .formBx .inputBx input{
+		height: 23px;
+	}
+	.contentSection .contentBx .formBx .DPset .ph1 {
+		width: 100%;
+		height: 45px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		font-size: 14px;
+		/*font-weight: bold;*/
+		padding: 10px 10px;
+	}
+	.contentSection .contentBx .formBx .DPset .ph2 {
+		width: 100%;
+		border: 1px solid #ddd;
+		font-size: 14px;
+		/*font-weight: bold;*/
+		letter-spacing: 1px;
+		color: #646464;
+		background: transparent;
+		border-radius: 5px;
+	}
+	/* 주소 */
+	.contentSection .contentBx .formBx .inputBx .arBX{
+		display: flex;
+	}
+
+/* button */
+.contentSection .contentBx .formBx .btnBX{
+	display: flex;
+	margin: 20px 0;
+	flex-direction: column;
+}
+.contentSection .contentBx .formBx .inputBx input[type="button"]{
+	height: 25px;
+	background: #2f5986;
+	color: #fff;
+	font-family: 'S-CoreDream-4Regular';
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.contentSection .contentBx .formBx .inputBx input[type="button"]:hover{
+	background: #708E48;
+}
+.contentSection .contentBx .formBx .inputBx input[type="reset"]{
+	height: 25px;
+	background: #ffffff;
+	color: #2f5986;
+	font-family: 'S-CoreDream-4Regular';
+	outline: none;
+	border: 1px solid #ddd;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.contentSection .contentBx .formBx .inputBx input[type="reset"]:hover{
+	background: #9ab377;
+	color: #ffffff;
+}
+
+/* 약관동의 폼 */
+.contentSection .contentBx .formBx .agreeform{
+	margin-left: 5px;
+}
+#chkwrap{
+	display: flex;
+	flex-direction: column;
+}
+#chkwrap .all-chk {
+	display: flex;
+	margin: 10px 0;
+	/* height: 43px; */
+	/* line-height: 45px; */
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	align-items: center;
+}
+#chkwrap .cont ul{
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #646464;
+	margin-bottom: 10px;
+}
+#chkwrap .cont ul .agreeflex{
+	display: flex;
+	align-items: baseline;
+	height: 22px;
+}
+#chkwrap .cont ul li .popupBX {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	line-height: 16px;
+	margin-left: 5px;
+	font-weight: normal;
+	font-size: 11px;
+	border: 1px solid #bdbec7;
+	background: #fafafa;
+	text-align: center;
+}
+#chkwrap .pbl10{
+	padding-left: 10px;
+}
+#chkwrap .cont .marketing{
+	margin-bottom: 10px;
+}
+#chkwrap .cont .marketing .mk-wrap div br{
+	display: none;
+}
+
+/* social */
+.contentSection .contentBx .formBx h3{
+	font-size: 15px;
+	color: #2f5986
+	text-align: center;
+	margin: 80px 0 30px;
+	font-weight: 500;
+}
+.contentSection .contentBx .formBx .sci{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.contentSection .contentBx .formBx .sci li{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #BEC1BA;
+	border-radius: 50%;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.contentSection .contentBx .formBx .sci .GG:hover{
+	background: #ea4335;
+}
+.contentSection .contentBx .formBx .sci .KT:hover{
+	background: #ffe812;
+}
+.contentSection .contentBx .formBx .sci .N:hover{
+	background: #2db400;
+}
+.contentSection .contentBx .formBx .sci li img{
+	width: 50px;
+	height: 50px;
+	transform: scale(0.5);
+	filter: invert(1);
+}
+
+}

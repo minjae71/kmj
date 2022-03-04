@@ -1,0 +1,527 @@
+/* 기본 CSS */
+#wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#wrap section {
+    box-sizing: border-box;
+}
+
+/* 모바일 영역 CSS */
+/* SNS 영역 */
+.sns_section {
+    order: 1;
+    width: 100%;
+    background-color: #1e88e2;
+    border-bottom: 1px solid #1e88e2;
+}
+.sns_list {
+    display: flex;
+}
+.sns_list li {
+    width: 25%;
+    text-align: center;
+}
+.sns_list li a {
+    display: block;
+    padding: 15px 0;
+    padding: 0.938rem 0;
+}
+
+/* 헤더 영역 */
+.header {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    position: relative;
+    background-color: #e5ecf1;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo_image {
+    order: 1;
+}
+.logo_text {
+    order: 2;
+    width: 100%;
+    font-size: 1.500em;
+    font-size: 1.500rem;
+    line-height: 21px;
+    line-height: 1.313rem;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px #000;
+}
+.logo_text a {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    color: #1e88e2;
+}
+.nav {
+    order: 3;
+    width: 100%;
+}
+.gnb {
+    display: none;
+}
+.gnb li {
+    display: flex;
+    background: #e5ecf1;
+}
+.gnb li a {
+    width: 100%;
+    padding: 20px 0;
+    padding: 1.250rem 0;
+    margin-right: 20px;
+    margin-right: 1.250rem;
+    font-size: 0.938em;
+    font-size: 0.938rem;
+    text-indent: 20px;
+    text-indent: 1.250rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: right;
+    color: #000;
+}
+.gnb li .now_page {
+    font-weight: bold;
+    color: #1e88e2;
+}
+.menu_toggle_btn {
+    display: block;
+    width: 50px;
+    width: 3.125rem;
+    height: 50px;
+    height: 3.125rem;
+    position: absolute;
+    top: 10px;
+    top: 0.625rem;
+    right: 10px;
+    right: 0.625rem;
+    text-indent: -9999px;
+    background: url(../images/s_images/menu_toggle_btn.png) no-repeat;
+    cursor: pointer;
+}
+    
+/* 서브 헤더 영역 */
+.sub_header_section {
+    order: 3;
+    padding: 48px 0;
+    padding: 3.000rem 0;
+    text-align: center;
+    background: #e5ecf1;
+    width: 100%;
+    border-bottom: 1px solid #1e88e2;
+}
+.sub_header_section h2 {
+    margin-bottom: 12px;
+    margin-bottom: 0.750rem;
+    font-size: 1.313em;
+    font-size: 1.313rem;
+    color: #000;
+}
+.breadcrum_list li {
+    display: inline;
+    font-size: 0.813em;
+    font-size: 0.813rem;
+    font-weight: bold;
+}
+.breadcrum_list li a {
+    color: #1e88e2;
+}
+
+/* 콘텐츠 영역 */
+.content_section {
+    order: 4;
+    padding: 20px;
+    padding: 1.250rem;
+    background: #e5ecf1;
+    text-align: center;
+}
+.content_section .content_row {
+    margin: 30px 0 40px 0;
+    margin: 1.875rem 0 2.500rem 0;
+}
+.content_section .content_row .title {
+    margin: 10px 0 10px 0;
+    margin: 1.25rem 0 1.25rem 0;
+    font-size: 1.25em;
+    font-size: 1.25rem;
+}
+.gallery_list a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.gallery_list a:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.gallery_list img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    z-index: 10;
+    transition: all 0.4s;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.gallery_list img:hover {
+    -webkit-filter: grayscale(0);
+   filter:grayscale(0);
+}
+.gallery_list li {
+    margin-top: 20px;
+    margin-top: 1.250rem;
+}
+.gallery_list li:first-child {
+    margin-top: 0;
+}
+.gallery_list a .info {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 23px;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.gallery_list a:hover .info {
+    transform: translateY(23px);
+    opacity: 1;
+}
+.gallery_list a .info h3 {
+    margin-bottom: 8px;
+    font-size: 33px;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 0px 2px 2px #000;
+}
+.gallery_list a .info span {
+    font-size: 21px;
+    color: #fff;
+    text-shadow: 0px 2px 2px #000;
+}
+
+/* 콘텐츠 > 검색박스 & 페이지네이션 영역 */
+.content_row_2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 40px 0;
+    margin: 1.875rem 0 2.500rem 0;
+}
+.search_window {
+    width: 118px;
+    width: 7.375rem;
+    height: 28px;
+    height: 1.750rem;
+    font-size: 0.688em;
+    font-size: 0.688rem;
+    line-height: 28px;
+    line-height: 1.750rem;
+    text-indent: 10px;
+    text-indent: 0.625rem;
+}
+.search_select_box {
+    display: none;
+}
+.write_box a {
+    display: block;
+    width: 70px;
+    width: 4.375rem;
+    height: 30px;
+    height: 1.875rem;
+    font-size: 0.813em;
+    font-size: 0.813rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    text-align: center;
+    background: #1e88e2;
+    color: #fff;
+}
+.content_row_3 {
+    display: flex;
+    justify-content: center;
+}
+.content_row_3 span {
+    width: 28px;
+    width: 1.750rem;
+    height: 28px;
+    height: 1.750rem;
+    text-indent: -9999px;
+}
+.content_row_3 span.list_prev_btn {
+    margin-right: 10px;
+    margin-right: 0.625rem;
+    background: #1e88e2 url(../images/s_images/list_prev_btn.png) center center no-repeat;
+}
+.content_row_3 span.list_next_btn {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    background: #1e88e2 url(../images/s_images/list_next_btn.png) center center no-repeat;
+}
+.content_row_3 a {
+    width: 26px;
+    width: 1.625rem;
+    font-size: 0.813em;
+    font-size: 0.813rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    text-align: center;
+    border: 1px solid #1e88e2;
+    color: #1e88e2;
+    transition: all 0.2s;
+}
+.content_row_3 a:nth-of-type(2) {
+    margin: 0 6px;
+    margin: 0 0.375rem;
+}
+.content_row_3 a:hover {
+    color: #fff;
+    background: #1e88e2;
+}
+
+/* 푸터 영역 */
+.footer {
+    order: 9;
+    width: 100%;
+    background: #2f5986;
+}
+.footer p {
+    padding: 20px;
+    font-size: 0.813em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 1px 1px #191919;
+}
+
+/* 태블릿 영역 CSS */
+@media all and (min-width:768px) {
+    #wrap {
+        flex-flow: row wrap;
+    }
+    /* SNS 영역 */
+    .sns_section {
+        order: 2;
+        width: 100%;
+        background-color: #e5ecf1;
+    }
+
+    /* 헤더 영역 */
+    .header {
+        order:1;
+        flex-direction: row;
+    }
+    .nav {
+        position: relative;
+        min-height: 70px;
+        min-height: 4.375rem;
+    }
+    .gnb {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 20;
+        width: 40.10416666666667%;
+    }
+    
+    .menu_toggle_btn {
+        top: 50%;
+        right: 30px;
+        right: 1.875rem;
+        z-index: 20;
+        margin-top: -15px;
+        margin-top: -0.938rem;
+    }
+
+    /* 콘텐츠 영역 */
+    .content_section {
+        padding: 40px;
+        padding: 2.500rem;
+    }
+    .gallery_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .gallery_list li {
+        width: 48.54651162790698%;
+    }
+    .gallery_list li:nth-child(2) {
+        margin-top: 0;
+    }
+    .gallery_list a .info {
+        right: 18px;
+    }
+    .gallery_list a .info h3 {
+        font-size: 23px;
+    }
+    .gallery_list a .info span {
+        font-size: 11px;
+    }
+
+    /* 콘텐츠 > 검색박스 & 페이지네이션 영역 */
+    .search_select_box {
+        display: inline-block;
+        position: relative;
+    }
+    .search_select_box span {
+        display: inline-block;
+        width: 80px;
+        width: 5.000rem;
+        height: 30px;
+        height: 1.875rem;
+        font-size: 0.813em;
+        font-size: 0.813rem;
+        line-height: 28px;
+        line-height: 1.750rem;
+        text-align: center;
+        color: #fff;
+        background: #1e88e2;
+        cursor: pointer;
+    }
+    .search_select_list {
+        display: none;
+        position: absolute;
+        top: 105%;
+        left: 0;
+        width: 100%;
+    }
+    .search_select_list li {
+        padding: 6px 0;
+        padding: 0.375rem 0;
+        font-size: 0.750em;
+        font-size: 0.750rem;
+        text-indent: 10px;
+        text-indent: 0.625rem;
+        color: #fff;
+        background: #1e88e2;
+        cursor: pointer;
+    }
+    .search_select_box:hover .search_select_list {
+        display: block;
+    }
+
+    /* 푸터 영역 */
+    .footer p {
+        padding: 40px;
+        padding: 2.500rem;
+    }
+}
+
+/* PC 영역 CSS */
+@media all and (min-width:1132px) {
+    #wrap {
+        position: relative;
+        width: 90%;
+    }
+    /* 헤더 영역 */
+    .header {
+        order: 1;
+        justify-content: flex-end;
+        position: static;
+        border-bottom: 1px solid #1e88e2;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        position: static;
+        width: 87.5%;
+    }
+    .gnb {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        text-shadow: 0px 1px 1px #000;
+        justify-content: flex-end;
+    }
+    .gnb li {
+        display: block;
+        background: none;
+    }
+    .gnb li a{
+        width: auto;
+        padding: 0;
+        text-indent: 0;
+    }
+    .gnb li span {
+        display: none;
+    }
+    .menu_toggle_btn {
+        display: none;
+    }
+
+    /* SNS 영역 */
+    .sns_section {
+        order: 8;
+        width: 100%;
+        background-color: #e5ecf1;
+    }
+    .sns_list {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .sns_list li {
+        width: 5%;
+        text-align: center;
+    }
+    .sns_list li a {
+        display: block;
+        padding: 15px 0;
+        padding: 0.938rem 0;
+    }
+
+    /* 서브 헤더 영역 */
+    .sub_header_section {
+        order: 2;
+    }
+
+    /* 콘텐츠 영역 */
+    .content_section {
+        order: 3;
+        padding: 60px;
+        padding: 3.750rem;
+    }
+    .gallery_list li {
+        width: 23.92857142857143%;
+        margin-top: 12px;
+        margin-top: 0.750rem;
+    }
+    .gallery_list li:nth-child(3), .gallery_list li:nth-child(4) {
+        margin-top: 0;
+    }
+    .gallery_list a .info {
+        right: 13px;
+    }
+    .gallery_list a .info h3 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .gallery_list a .info span {
+        font-size: 10px;
+    }
+
+    /* 푸터 영역 */
+    .footer {
+        order: 9;
+    }
+    .footer p {
+        padding-left: 3.125rem;
+        text-align: left;
+    }
+}
